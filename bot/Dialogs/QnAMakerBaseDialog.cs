@@ -50,7 +50,7 @@ namespace Microsoft.BotBuilderSamples.Dialogs
                 QnAId = 0,
                 RankerType = "Default",
                 IsTest = false,
-                EnablePreciseAnswer = this.EnablePreciseAnser
+                //EnablePreciseAnswer = this.EnablePreciseAnser
             }); 
         }
 
@@ -67,11 +67,13 @@ namespace Microsoft.BotBuilderSamples.Dialogs
                 CardNoMatchText = DefaultCardNoMatchText,
                 NoAnswer = noAnswer,
                 CardNoMatchResponse = cardNoMatchResponse,
-                DisplayPreciseAnswerOnly = this.DisplayPreciseAnswerOnly
+                //DisplayPreciseAnswerOnly = this.DisplayPreciseAnswerOnly
             };
 
             return responseOptions;
         }
+
+        /*
         private bool EnablePreciseAnser
         {
             get
@@ -111,5 +113,6 @@ namespace Microsoft.BotBuilderSamples.Dialogs
                 }                
             }
         }
+        */
     }
 }
