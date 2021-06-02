@@ -26,7 +26,7 @@ namespace Microsoft.BotBuilderSamples.Bots
             {
                 if (member.Id != turnContext.Activity.Recipient.Id)
                 {
-                    await turnContext.SendActivityAsync(MessageFactory.Text("Welcome to AuthenticationBot. Type anything to get logged in. Type 'logout' to sign-out."), cancellationToken);
+                    await turnContext.SendActivityAsync(MessageFactory.Text("ようこそ！何か文字を送信してください"), cancellationToken);
                 }
             }
         }

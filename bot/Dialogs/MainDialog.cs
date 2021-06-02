@@ -77,7 +77,7 @@ namespace Microsoft.BotBuilderSamples.Dialogs
                 var accessor = _userState.CreateProperty<LoginState>(nameof(LoginState));
                 await accessor.SetAsync(stepContext.Context, new LoginState(true), cancellationToken);
                 //await stepContext.Context.SendActivityAsync($"You're logged in as {me.DisplayName} ({me.UserPrincipalName}); you job title is: {title}");
-                await stepContext.Context.SendActivityAsync($"こんにちは！{me.DisplayName} ({me.UserPrincipalName})さん");
+                await stepContext.Context.SendActivityAsync($"こんにちは！{me.DisplayName} ({me.UserPrincipalName})さん。質問をどうぞ！");
 
                 //return await stepContext.PromptAsync(nameof(ConfirmPrompt), new PromptOptions { Prompt = MessageFactory.Text("Would you like to view your token?") }, cancellationToken);
                 return await stepContext.EndDialogAsync(cancellationToken: cancellationToken);

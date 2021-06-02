@@ -60,7 +60,7 @@ namespace Microsoft.BotBuilderSamples.Dialogs
                     await userTokenClient.SignOutUserAsync(innerDc.Context.Activity.From.Id, ConnectionName, innerDc.Context.Activity.ChannelId, cancellationToken).ConfigureAwait(false);
                     var loginstateAccessors = _userState.CreateProperty<LoginState>(nameof(LoginState));
                     await loginstateAccessors.SetAsync(innerDc.Context, new LoginState(false), cancellationToken);
-                    await innerDc.Context.SendActivityAsync(MessageFactory.Text("You have been signed out."), cancellationToken);
+                    await innerDc.Context.SendActivityAsync(MessageFactory.Text("ログアウトしました"), cancellationToken);
                     return await innerDc.CancelAllDialogsAsync(cancellationToken);
                 }
             }
