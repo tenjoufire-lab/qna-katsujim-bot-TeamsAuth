@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Bot.Builder.AI.QnA", "sdk\Microsoft.Bot.Builder.AI.QnA\Microsoft.Bot.Builder.AI.QnA.csproj", "{B810C57C-7D25-4DAC-B895-A38A82CD1756}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeamsAuth", "bot\TeamsAuth.csproj", "{13893B36-3154-44A5-9E85-51862E86530C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B810C57C-7D25-4DAC-B895-A38A82CD1756}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B810C57C-7D25-4DAC-B895-A38A82CD1756}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B810C57C-7D25-4DAC-B895-A38A82CD1756}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B810C57C-7D25-4DAC-B895-A38A82CD1756}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13893B36-3154-44A5-9E85-51862E86530C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13893B36-3154-44A5-9E85-51862E86530C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13893B36-3154-44A5-9E85-51862E86530C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13893B36-3154-44A5-9E85-51862E86530C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8AFB06CD-D19C-4114-B6BB-ACD5171FC2C4}
+	EndGlobalSection
+EndGlobal

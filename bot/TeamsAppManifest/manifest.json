@@ -1,0 +1,44 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.5",
+  "version": "1.0.1",
+  "id": "7b40a7f9-2b02-4a5e-8d7a-724ac852da68",
+  "packageName": "com.microsoft.teams.samples",
+  "developer": {
+    "name": "Microsoft",
+    "websiteUrl": "https://example.azurewebsites.net",
+    "privacyUrl": "https://example.azurewebsites.net/privacy",
+    "termsOfUseUrl": "https://example.azurewebsites.net/termsofuse"
+  },
+  "icons": {
+    "color": "icon-color.png",
+    "outline": "icon-outline.png"
+  },
+  "name": {
+    "short": "Team Auth Katsujim",
+    "full": "Simple Team Auth Katsujim"
+  },
+  "description": {
+    "short": "Test Team Auth Module Scenario",
+    "full": "Simple Team Auth Module Scenario Test"
+  },
+  "accentColor": "#FFFFFF",
+  "bots": [
+    {
+      "botId": "7b40a7f9-2b02-4a5e-8d7a-724ac852da68",
+      "scopes": [
+        "personal"
+      ],
+      "supportsFiles": false,
+      "isNotificationOnly": false
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "token.botframework.com",
+    "*.ngrok.io"
+  ]
+}
